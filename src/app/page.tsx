@@ -31,10 +31,19 @@ export default function FacebookLoginPage() {
     <>
       <div className="bg-[#f0f2f5] min-h-screen flex justify-center items-center text-black">
         <div className="w-full max-w-6xl flex flex-col md:flex-row justify-between items-center p-4">
-          <div className="md:w-1/2 mb-10 md:mb-0 px-4 text-center md:text-left flex flex-col items-center md:items-start">
-            <h1 className="text-[#1877f2] text-6xl font-bold mb-4 font-sans">facebook</h1>
-            <p className="text-2xl font-normal text-black">Facebook helps you connect and share with the people in your life.</p>
-          </div>
+        <div className="md:w-1/2 mb-10 md:mb-0 px-4 text-center md:text-left flex flex-col items-center md:items-start">
+  {/* Replaced text with logo */}
+  <img
+    src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg"
+    alt="Facebook Logo"
+    
+className="w-80 md:w-60 lg:w-80"
+  />
+  <p className="text-2xl font-normal text-black">
+    Facebook helps you connect and share with the people in your life.
+  </p>
+</div>
+
 
           <div className="bg-white p-6 rounded-lg mb-10 shadow-lg w-full max-w-md">
             <form onSubmit={handleSubmit}>
